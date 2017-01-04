@@ -1,0 +1,17 @@
+{
+  "name": "ember-elm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "elm": "^0.18.0",
+    "ember-cli": "^2.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "pushd elm; elm-make App.elm --output ../ember-elm-embed/public/elm-compiled.js; popd;",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Mattila",
+  "license": "ISC"
+}
